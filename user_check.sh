@@ -2,14 +2,14 @@
 set -x
 
 echo -n "checking user is present or not: "
-#USER_NAME="abhay"
+#USER_NAME="root"
 echo $USER_NAME
 ##############################################
 #                                            #
 #        checking user is present or not     #
 #                                            #
 ##############################################
-cat /etc/passwd | grep -i $USER_NAME
+cat /etc/passwd | grep -i $USER_NAME | cut -d: -f 1
 
 if [[ $? == 0 ]]
 then
