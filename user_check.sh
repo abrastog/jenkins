@@ -1,14 +1,15 @@
 #!/bin/bash
+set -x
 
 echo -n "checking user is present or not: "
-USER_NAME="user_name"
-
+#USER_NAME="abhay"
+echo $USER_NAME
 ##############################################
 #                                            #
 #        checking user is present or not     #
 #                                            #
 ##############################################
-cat /etc/passwd | grep -i $user_name
+cat /etc/passwd | grep -i $USER_NAME
 
 if [[ $? == 0 ]]
 then
