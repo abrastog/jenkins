@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 echo -n "Hostname: " $HOSTNAME
+
+
 echo -n $Command_to_check
 
 hostname
