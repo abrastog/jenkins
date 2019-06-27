@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 echo -n "Hostname: " $HOSTNAME
 echo ""
-ssh -t -t root@$HOSTNAME
+ssh -t -t root@$HOSTNAME << EOF
 
 hostname
 
@@ -12,4 +12,5 @@ echo ""
 echo -n "Value i want to check is :- "
 echo ""
 $Command_to_check
+EOF
 
