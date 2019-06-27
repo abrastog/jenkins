@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 echo -n "Hostname: " $HOSTNAME
-echo ""
-#ssh -t -t $HOSTNAME 
+echo -n $Command_to_check
 
-hostname
 hostname
 sudo su - abhay
 sudo yum install figlet -y
