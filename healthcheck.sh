@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 echo -n "Hostname: " $HOSTNAME
 echo ""
-ssh -t -t $HOSTNAME
+ssh -t -t root@$HOSTNAME
 
 hostname
 
