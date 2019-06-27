@@ -2,7 +2,7 @@
 echo -n "Hostname: " $HOSTNAME
 
 
-echo -n $Command_to_check
+$Command
 
 hostname
 sudo su - abhay
