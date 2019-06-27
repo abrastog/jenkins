@@ -9,3 +9,4 @@ echo ""
 echo -n "Value i want to check is :- "
 echo ""
 $Command_to_check
+hostname
