@@ -18,4 +18,3 @@ then
 else 
    echo "user is not available"
 fi
-hostname
