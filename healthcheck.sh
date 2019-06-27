@@ -2,7 +2,7 @@
 echo -n "Hostname: " $HOSTNAME
 
 
-$Command
+$1
 
 hostname
 sudo su - abhay
