@@ -1,6 +1,6 @@
 #!/bin/bash
 #set -x
-USER_NAME=$1
+#USER_NAME=$1
 hostname
 echo  "checking user is present or not!! "
 ##############################################
