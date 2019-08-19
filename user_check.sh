@@ -12,7 +12,8 @@ echo  "checking user is present or not!! "
 #        checking user is present or not     #
 #                                            #
 ##############################################
-sudo CHECK=$(cat /etc/passwd | grep -i $USER_NAME | cut -d: -f 1)
+
+CHECK=$(cat /etc/passwd | grep -i $USER_NAME | cut -d: -f 1)
 
 if [[ $CHECK == $USER_NAME ]]
 then
