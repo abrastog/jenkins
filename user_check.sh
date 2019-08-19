@@ -1,10 +1,10 @@
 #!/bin/bash
 #set -x
-ssh -t -t $HOSTNAME
-echo  "checking user is present or not!! "
+#ssh -t -t $HOSTNAME
+#echo  "checking user is present or not!! "
 #USER_NAME="root"
-echo -n \n"Enter the user name here:-->>"
-read USER_NAME
+#echo -n \n"Enter the user name here:-->>"
+#read USER_NAME
 ##############################################
 #                                            #
 #        checking user is present or not     #
