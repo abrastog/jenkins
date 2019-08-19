@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+#set -x
 #ssh -t -t $HOSTNAME
 echo $USER_NAME
 hostname
