@@ -1,7 +1,6 @@
 #!/bin/bash
 #set -x
 USER_NAME=$1
-hostname
 echo  "checking user is present or not!! "
 ##############################################
 #                                            #
@@ -9,6 +8,7 @@ echo  "checking user is present or not!! "
 #                                            #
 ##############################################
 
+hostname
 CHECK=$(cat /etc/passwd | grep -i "$USER_NAME" | cut -d: -f 1)
 
 if [ -z "$CHECK" ]
