@@ -2,7 +2,7 @@
 set -x
 ssh -t -t $HOSTNAME'
 echo $USER_NAME
-echo $hostname
+hostname
 echo  "checking user is present or not!! "
 #USER_NAME="root"
 #echo -n \n"Enter the user name here:-->>"
