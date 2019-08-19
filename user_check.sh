@@ -1,6 +1,6 @@
 #!/bin/bash
 set -x
-ssh -t -t $HOSTNAME
+#ssh -t -t $HOSTNAME
 echo $USER_NAME
 hostname
 echo  "checking user is present or not!! "
