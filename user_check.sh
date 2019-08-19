@@ -13,11 +13,20 @@ echo  "checking user is present or not!! "
 #                                            #
 ##############################################
 
-CHECK=$(cat /etc/passwd | grep -i $USER_NAME | cut -d: -f 1)
+CHECK=$(cat /etc/passwd | grep -i "$USER_NAME" | cut -d: -f 1)
 
-if [[ $CHECK == $USER_NAME ]]
+if [ -z "$CHECK" ]
 then
-   echo "user is present "
-else 
-   echo "user is not available"
+      echo "\$CHECK is empty"
+else
+      echo "\$CHECK user is present"
 fi
+
+
+
+#if [[ $CHECK == $USER_NAME ]]
+#then
+#   echo "user is present "
+#else 
+#   echo "user is not available"
+#fi
