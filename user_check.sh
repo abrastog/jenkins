@@ -10,7 +10,7 @@ read USER_NAME
 #        checking user is present or not     #
 #                                            #
 ##############################################
-CHECK=$(cat /etc/passwd | grep -i $USER_NAME | cut -d: -f 1)
+sudo CHECK=$(cat /etc/passwd | grep -i $USER_NAME | cut -d: -f 1)
 
 if [[ $CHECK == $USER_NAME ]]
 then
